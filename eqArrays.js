@@ -18,14 +18,13 @@ const eqArrays = function(arr1, arr2) {
   return true; // output true if arrays are the same
 }
 
-/* Test parameters
+// Test parameters
 console.log(eqArrays([1, 2, 3], [3, 2, 1]));
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+// eqArrays([1, 2, 3], [1, 2, 3]) // => true
+// eqArrays([1, 2, 3], [3, 2, 1]) // => false
 
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-*/
+// eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+// eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
