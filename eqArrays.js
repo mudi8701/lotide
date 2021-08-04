@@ -11,19 +11,21 @@ const assertEqual = function(actual, expected) {
 
 // Function to compare two arrays
 const eqArrays = function(arr1, arr2) {
-  for(let i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i])
+  for(let i = 0; i < arr1.length; i++) { // comparing array lenghts
+    if(arr1[i] !== arr2[i]) // checking if array is the same
     return false;
   }
-  return true;
+  return true; // output true if arrays are the same
 }
 
+/* Test parameters
 console.log(eqArrays([1, 2, 3], [3, 2, 1]));
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
 
-// eqArrays([1, 2, 3], [1, 2, 3]) // => true
-// eqArrays([1, 2, 3], [3, 2, 1]) // => false
+eqArrays([1, 2, 3], [1, 2, 3]) // => true
+eqArrays([1, 2, 3], [3, 2, 1]) // => false
 
-// eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-// eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+*/
